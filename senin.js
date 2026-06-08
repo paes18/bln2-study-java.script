@@ -42,10 +42,10 @@ console.log(admin || moderator); // true
 
 
 // Soal 5
-let listrikMati = false;
-let internetPutus = true;
+let listrikmati = false;
+let internetputus = true;
 
-console.log(listrikMati || internetPutus); // true
+console.log(listrikmati || internetputus); //truee
 
 
 // Soal 6
@@ -95,14 +95,14 @@ console.log((a> b) && (c > a)); // false
 
 
 // Soal 10
-let a = 6;
-let b = 2;
-console.log((a * 2 > 10) && (b % 2 == 0)); // true
+let a1 = 6;
+let b1 = 2;
+console.log((a1 * 2 > 10) && (b1 % 2 == 0)); // true
 
-let a = 7;
-let b = 4;
-console.log((a * 2 > 10) && (b % 2 == 0)); // true
+let a2 = 7;
+let b2 = 4;
+console.log((a2 * 2 > 10) && (b2 % 2 == 0)); // true
 
-let a = 10;
-let b = 8;
-console.log((a * 2 > 10) && (b % 2 == 0)); // true
+let a3 = 10;
+let b3 = 8;
+console.log((a3 * 2 > 10) && (b3 % 2 == 0)); // true
