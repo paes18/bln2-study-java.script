@@ -1,4 +1,4 @@
- == menurut saya, urutan yang paling adil itu:
+  menurut saya, urutan yang paling adil itu:
 
  (konsumsi - status - mencari - pasar - solidaritas)
 
