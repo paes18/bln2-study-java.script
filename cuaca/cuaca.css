@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .35);
+  z-index: -1;
+}
+
+.container {
+  width: 90%;
+  max-width: 520px;
+  margin: 45px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.sub {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: .85;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 16px;
+  background: #38bdf8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.search-box button:hover {
+  background: #0284c7;
+}
+
+.weather-card {
+  padding: 35px 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, .13);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, .2);
+}
+
+.weather-img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, .35));
+}
+
+.weather-card h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.weather-card h3 {
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+
+.weather-card p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.details div {
+  width: 50%;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .15);
+}
+
+.details span {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .details div {
+    width: 100%;
+  }
+}
